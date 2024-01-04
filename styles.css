@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #0F2167;
+}
+
+.title {
+    font-size: 32px;
+    color: #FFECD6;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #FFECD6;
+}
+
+#select-character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.character-card {
+    width: 180px;
+    height: 100px;
+    background-color: #4CB9E7;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #0F2167;
+}
+
+.character-card img {
+    width: 80px;
+}
+
+#btn-select-character {
+    width: 180px;
+    height: 40px;
+    color: #FFECD6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3559E0;
+    border-radius: 20px;
+    border: 0;
+    margin: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #3559E0;
+}
+
+#select-attack {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-attack {
+    background-color: #4CB9E7;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: bold;
+    border: 0;
+}
+
+#messages {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    background-color: #3559E0;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#btn-restart {
+    border: transparent;
+    border-radius: 20px;
+    background-color: #0F2167;
+    width: 120px;
+    margin: 16px;
+    color: #FFECD6;
+    font-family: sans-serif;
+    height: 22px;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: #FFECD6;
+}
+
+#life-player, #life-enemy {
+    font-size: 32px;
+}
+
+.player-life-and-attacks, .enemy-life-and-attacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .cards {
+        flex-direction: column;
+    }
+}

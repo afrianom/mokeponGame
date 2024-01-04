@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+    <script src="js/mokepon.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section id="select-character">
+        <h1 class="title">MOKEPON!</h1>
+
+        <h2 class="subtitle">Choose your character:</h2>
+
+        <div class="cards">
+
+            <input type="radio" name="characters" id="hipodoge">
+            <label class="character-card" for="hipodoge">
+                <p>Hipodoge</p>
+                <img src="./assets/Hipodoge.png" alt="Hipodoge" >
+            </label>
+
+            <input type="radio" name="characters" id="capipepo">
+            <label class="character-card" for="capipepo">
+                <p>Capipepo</p>
+                <img src="./assets/capipepo.png" alt="Capipepo" >
+            </label>
+            
+            <input type="radio" name="characters" id="ratigueya">
+            <label class="character-card" for="ratigueya">
+                <p>Ratigueya</p>
+                <img src="./assets/ratigueya.png" alt="Ratigueya" >
+            </label>
+        </div>
+
+        <button id="btn-select-character">Select</button>
+    </section>
+
+    <section id="select-attack">
+        <h1 class="title">MOKEPON!</h1>
+
+        <h2 class="subtitle">Choose your attack:</h2>
+        <div class="cards">
+            <button id="btn-attack-fire" class="btn-attack">FIRE 🔥</button>
+            <button id="btn-attack-earth" class="btn-attack">EARTH 🌱</button>
+            <button id="btn-attack-water" class="btn-attack">WATER 💧</button>
+        </div>
+
+        <section id="messages">
+            <p id="result-battle">Start the battle</p>
+            <section id="restart-section">
+                <button id="btn-restart">RESTART</button>
+            </section>
+        </section>
+
+        <div class="info-content">
+            <div class="player-life-and-attacks">
+                <p id="life-player">3</p>
+                <p id="character-player"></p>
+                <div id="your-attack"></div>
+            </div>
+            <div class="enemy-life-and-attacks">
+                <p id="life-enemy">3</p>
+                <p id="character-enemy"></p>
+                <div id="enemy-attack"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
